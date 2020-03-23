@@ -42,7 +42,8 @@ def valid_proof(last_hash, proof):
     """
 
     # TODO: Your code here!
-    pass
+
+    return last_hash[-6:] == hash(proof)[:6]
 
 
 if __name__ == '__main__':
